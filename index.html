@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Forge/Clinical.</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Forge/Clinical waitlist" />
+  <link href="https://fonts.googleapis.com/css2?display=swap&family=Sora:ital,wght@0,400;0,700;1,400;1,700&family=Inter:ital,wght@0,300;1,300" rel="stylesheet" />
+
+  <style>
+    *, *::before, *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html, body {
+      height: 100%;
+    }
+
+    body {
+      min-height: 100vh;
+      font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+      background-color: #15141C;
+      color: #ffffff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 0 1.5rem;
+      background-image:
+        radial-gradient(circle at top, rgba(80, 120, 255, 0.25), transparent 55%),
+        radial-gradient(circle at bottom, rgba(0, 0, 0, 0.9), #15141C 70%);
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+
+    .site-wrapper {
+      max-width: 600px;
+      width: 100%;
+    }
+
+    .card {
+      padding: 4rem 3rem;
+    }
+
+    @media (max-width: 736px) {
+      .card {
+        padding: 3rem 2rem;
+      }
+    }
+
+    /* Injected logo styles */
+    .logo-container {
+      margin-bottom: 2rem;
+    }
+
+    .w-36 {
+      width: 9rem;
+      height: 9rem;
+    }
+
+    .h-36 {
+      height: 9rem;
+    }
+
+    .w-20 {
+      width: 5rem;
+    }
+
+    .h-20 {
+      height: 5rem;
+    }
+
+    .bg-gradient-to-br {
+      background-image: linear-gradient(to bottom right, #0, #3730A3);
+    }
+
+    .rounded-\[2\.5rem\] {
+      border-radius: 2.5rem;
+    }
+
+    .mx-auto {
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .flex {
+      display: flex;
+    }
+
+    .items-center {
+      align-items: center;
+    }
+
+    .justify-center {
+      justify-content: center;
+    }
+
+    .text-white {
+      color: white;
+    }
+
+    .shadow-\[0_0_60px_-10px_rgba\(37\,99\,235\,0\.6\)\] {
+      box-shadow: 0 0 60px -10px rgba(37, 99, 235, 0.6);
+    }
+
+    h1 {
+      font-family: 'Sora', system-ui, sans-serif;
+      font-size: 3rem;
+      line-height: 1.25;
+      font-weight: 700;
+      color: #A16D6D;
+      margin-bottom: 1rem;
+    }
+
+    @media (max-width: 736px) {
+      h1 {
+        font-size: 2.5rem;
+      }
+    }
+
+    .tagline {
+      font-family: 'Inter', system-ui, sans-serif;
+      font-size: 1rem;
+      line-height: 2;
+      font-weight: 300;
+      color: rgba(255, 255, 255, 0.66);
+      margin-bottom: 2.5rem;
+    }
+
+    .buttons {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 3rem;
+    }
+
+    .waitlist-btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: flex-end;
+      gap: 0.5rem;
+      height: 3.75rem;
+      padding: 0 1.875rem;
+      border-radius: 2rem;
+      font-family: 'Inter', system-ui, sans-serif;
+      font-size: 1rem;
+      font-weight: 300;
+      color: #ffffff;
+      text-decoration: none;
+      background-color: #FF5473;
+      background-image: linear-gradient(209deg, #FA9048 0%, rgba(255, 84, 115, 0.008) 100%);
+      background-size: cover;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.45);
+      transition: transform 0.25s ease, box-shadow 0.25s ease, opacity 0.25s ease;
+    }
+
+    .waitlist-btn svg {
+      width: 1.125em;
+      height: 1.125em;
+      fill: #ffffff;
+      flex-shrink: 0;
+    }
+
+    .waitlist-btn:hover {
+      transform: scale(1.0775);
+      box-shadow: 0 14px 40px rgba(0, 0, 0, 0.6);
+      opacity: 0.96;
+    }
+
+    .footer-sub {
+      font-family: 'Sora', system-ui, sans-serif;
+      font-size: 0.65rem;
+      letter-spacing: 0.075rem;
+      color: #6D4D4D;
+      margin-bottom: 0.55rem;
+    }
+
+    .footer-main {
+      font-family: 'Inter', system-ui, sans-serif;
+      font-size: 0.9rem;
+      line-height: 2;
+      font-weight: 300;
+      color: rgba(255, 255, 255, 0.26);
+    }
+  </style>
+</head>
+<body>
+  <div class="site-wrapper">
+    <main class="card" aria-label="Forge Clinical waitlist">
+      <!-- Injected logo -->
+      <div class="logo-container">
+        <div class="w-36 h-36 bg-gradient-to-br from-blue-600 to-indigo-800 rounded-[2.5rem] mx-auto flex items-center justify-center shadow-[0_0_60px_-10px_rgba(37,99,235,0.6)]">
+          <svg viewBox="0 0 24 24" fill="none" class="w-20 h-20 text-white" xmlns="http://www.w3.org/2000/svg">
+            <path d="M12 1C12 1 14.5 8.5 15 10C15.5 11.5 23 12 23 12C23 12 15.5 12.5 15 14C14.5 15.5 12 23 12 23C12 23 9.5 15.5 9 14C8.5 12.5 1 12 1 12C1 12 8.5 11.5 9 10C9.5 8.5 12 1 12 1Z" fill="currentColor" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+          </svg>
+        </div>
+      </div>
+
+      <h1>Forge/Clinical.</h1>
+      <p class="tagline">Forging tomorrow...</p>
+
+      <div class="buttons">
+        <a
+          class="waitlist-btn"
+          href="https://forms.gle/wYg218ftzvNZZCvx6"
+          role="button"
+        >
+          <span class="label">Waitlist</span>
+          <svg aria-hidden="true" viewBox="0 0 40 40">
+            <path d="M17.1,5.5l13.4,13.8.2.2c.2.1.3.3.3.5h0c-.1.2-.1.3-.3.5l-.2.2-13.4,13.8c-.3.3-.9.3-1.2,0l-2.6-2.5c-.3-.3-.3-.9,0-1.2l10.6-10.8-10.6-10.8c-.3-.3-.3-.9,0-1.2l2.6-2.5c.3-.3.9-.3,1.2,0Z"></path>
+          </svg>
+        </a>
+      </div>
+
+      <p class="footer-sub">Developed by MD</p>
+      <p class="footer-main">© 2026 Forge Clinical</p>
+    </main>
+  </div>
+</body>
+</html>
